@@ -1,0 +1,66 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 16px 8px;
+    text-align: center;
+}
+
+tr:first-child:not(.head-row) {
+    font-weight: bold;
+}
+
+tr:nth-child(odd):not(.head-row) {
+    background-color: #222233;
+}
+
+.name-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & div {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    & img {
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        width: 32px;
+    }
+
+    & span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+h1 {
+    margin-block: 24px;
+    text-align: center;
+    text-wrap: pretty;
+}
+
+.fi-br-caret-down {
+    color: red;
+}
+
+.fi-br-caret-up {
+    color: green;
+}
+
+.fi-br-horizontal-rule {
+    color: gray;
+}
+

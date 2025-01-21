@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+		/>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/ligaArg.css" />
+		<title>Liga Argentina 2021</title>
+	</head>
+	<body>
+		<header id="top-header-container">
+			<div id="top-header" class="container">
+				<div id="header-content">
+					<div>
+						<a href="home.html"><h2>LOGO</h2></a>
+					</div>
+					<div class="icons">
+						<div class="icon">
+							<a href="info.html">
+								<svg
+									width="100%"
+									height="100%"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</a>
+						</div>
+						<div class="icon" id="menu-icon" role="button">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M3 12H21M3 6H21M3 18H21"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav id="menu" class="">
+				<ul id="menu-options">
+					<a href="ligaargentina2021.html"><li>Liga Argentina 2021</li></a>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<h1>RESULTADOS LIGA ARGENTINA 2021</h1>
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr class="head-row">
+							<th>POS</th>
+							<th>Equipos</th>
+							<th>PTS</th>
+							<th>PJ</th>
+							<th>G</th>
+							<th>E</th>
+							<th>P</th>
+							<th>GF</th>
+							<th>GC</th>
+							<th>Dif</th>
+						</tr>
+					</thead>
+					<tbody id="data-table"></tbody>
+				</table>
+			</div>
+		</main>
+		<template id="row-data">
+			<tr>
+				<td class="pos-col"></td>
+				<td class="name-col"></td>
+				<td class="pts-col"></td>
+				<td class="pj-col"></td>
+				<td class="g-col"></td>
+				<td class="e-col"></td>
+				<td class="p-col"></td>
+				<td class="gf-col"></td>
+				<td class="gc-col"></td>
+				<td class="dif-col"></td>
+			</tr>
+		</template>
+		<script src="js/ligaArg.js" defer></script>
+		<script src="js/header.js" defer></script>
+	</body>
+</html>
