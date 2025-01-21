@@ -17,6 +17,7 @@ body {
         sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    min-height: 100vh;
 }
 
 .container{
@@ -48,4 +49,10 @@ a {
 
 main{
     padding: 16px;
+    height: 100%;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
 }

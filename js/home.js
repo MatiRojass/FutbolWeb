@@ -104,7 +104,7 @@ const main = async () => {
         }
 
         if (data.response.length == 0) {
-            ul.innerHTML = `<li><h3>No hay partidos para mostrar</h3></li>`
+            ul.innerHTML = `<li><h3 class="not-match">No hay partidos para mostrar</h3></li>`
             return
         }
 
@@ -115,7 +115,7 @@ const main = async () => {
 
 
     } catch (e) {
-        ul.innerHTML = `<li><h3>Error en la peticion :(</h3></li>`
+        ul.innerHTML = `<li><h3 class="not-match">Error en la peticion :(</h3></li>`
         console.error(e)
     }
 }

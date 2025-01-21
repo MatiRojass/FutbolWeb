@@ -81,3 +81,6 @@ li{
     color: var(--text-accent-color);
 }
 
+.not-match{
+    text-align: center;
+}

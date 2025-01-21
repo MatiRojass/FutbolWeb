@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+		/>
+		<title>Futbol Web Info</title>
+		<style>
+			main h1,
+			main h2 {
+				margin-block: 1rem;
+			}
+
+			main ul,
+			main ol {
+				margin: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="top-header-container">
+			<div id="top-header" class="container">
+				<div id="header-content">
+					<div>
+						<a href="index.html" class="logo-a"
+							><i class="fi fi-br-football"></i>
+							<h2>FUTBOL</h2></a
+						>
+					</div>
+					<div class="icons">
+						<div class="icon">
+							<a href="info.html">
+								<svg
+									width="100%"
+									height="100%"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</a>
+						</div>
+						<div class="icon" id="menu-icon" role="button">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M3 12H21M3 6H21M3 18H21"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav id="menu" class="">
+				<ul id="menu-options">
+					<a href="ligaargentina2021.html"><li>Liga Argentina 2021</li></a>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<section class="info">
+				<h1>Sobre el Proyecto</h1>
+				<p>
+					Este proyecto fue desarrollado como práctica para mejorar mis
+					habilidades en el consumo de APIs con JavaScript y profundizar en el
+					uso de tecnologías web modernas.
+				</p>
+
+				<h2>Características</h2>
+				<ul>
+					<li>
+						Consumo de la API de <strong>Football API</strong> para obtener
+						datos en tiempo real.
+					</li>
+					<li>Actualización automática de marcadores cada 2.5 minutos.</li>
+					<li>
+						Uso de <code>localStorage</code> para almacenar datos estáticos,
+						como la tabla de posiciones de la liga argentina 2021.
+					</li>
+					<li>
+						Implementación de componentes reutilizables como el header con un
+						menú desplegable.
+					</li>
+					<li>
+						Exploración y uso de plantillas HTML (<code>&lt;template&gt;</code>)
+						para generar dinámicamente tarjetas de partidos.
+					</li>
+				</ul>
+
+				<h2>Tecnologías Utilizadas</h2>
+				<ul>
+					<li>
+						<strong>HTML5</strong> y <strong>CSS3</strong> para la estructura y
+						el diseño visual.
+					</li>
+					<li>
+						<strong>JavaScript</strong> (Vanilla) para la lógica y las
+						interacciones dinámicas.
+					</li>
+					<li>
+						<strong>Vite</strong> para optimizar y servir la aplicación durante
+						el desarrollo.
+					</li>
+				</ul>
+
+				<h2>Cómo Funciona</h2>
+				<p>La aplicación tiene dos secciones principales:</p>
+				<ol>
+					<li>
+						<strong>Partidos en Vivo:</strong> Muestra los marcadores de los
+						partidos en tiempo real con actualizaciones automáticas cada 2.5
+						minutos.
+					</li>
+					<li>
+						<strong>Tabla de Posiciones:</strong> Presenta la tabla estática de
+						la liga argentina 2021, utilizando <code>localStorage</code> para
+						optimizar el acceso a los datos.
+					</li>
+				</ol>
+			</section>
+		</main>
+
+		<footer class="container">
+			<p>&copy; 2025 Mi Proyecto Futbol Web. Creado por Matias Rojas.</p>
+		</footer>
+		<script src="js/header.js" defer></script>
+	</body>
+</html>
