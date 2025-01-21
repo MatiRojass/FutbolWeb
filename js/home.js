@@ -90,6 +90,9 @@ const createCards = (matchs, template, ul) => {
 };
 
 const main = async () => {
+    const template = document.getElementById('card-template')
+    const ul = document.getElementById('matchs-list')
+
     try {
         const data = await getData()
 
@@ -106,8 +109,7 @@ const main = async () => {
         }
 
         const matchs = data.response
-        const template = document.getElementById('card-template')
-        const ul = document.getElementById('matchs-list')
+
         ul.innerHTML = ''
         createCards(matchs, template, ul)
 

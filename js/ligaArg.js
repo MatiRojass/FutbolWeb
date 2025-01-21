@@ -38,7 +38,7 @@ const getData = async () => {
 const createRows = (stands, template, tbody) => {
     stands.forEach(stand => {
         const row = template.content.cloneNode(true)
-        cols = row.querySelectorAll('td')
+        const cols = row.querySelectorAll('td')
         const span = document.createElement('span')
         const i = document.createElement('i')
         i.classList.add('fi')
