@@ -96,9 +96,7 @@ const main = async () => {
     try {
         const data = await getData()
 
-        console.log(data)
-
-        if (data.errors.length > 0) {
+        if (data.errors) {
             console.error(data.errors)
             throw new Error("Error en la peticion")
         }
