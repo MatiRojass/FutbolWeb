@@ -72,8 +72,8 @@ const createRows = (stands, template, tbody) => {
 const main = async () => {
     try {
         const data = await getData()
-
-        if (data.errors) {
+        console.log(data)
+        if (data.errors.length > 0) {
             console.error(data.errors)
             throw new Error("Error en la peticion")
         }

@@ -95,13 +95,14 @@ const main = async () => {
 
     try {
         const data = await getData()
+        console.log(data)
 
-        if (data.errors) {
+        if (data.errors.length > 0) {
             console.error(data.errors)
             throw new Error("Error en la peticion")
         }
 
-        if (data.response.length == 0) {
+        if (data.results == 0) {
             ul.innerHTML = `<li><h3 class="not-match">No hay partidos para mostrar</h3></li>`
             return
         }
